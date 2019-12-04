@@ -19,9 +19,9 @@ func print(i uint,n,m,j string){
 	fmt.Println(s3)
 }
 
-func getDocentes() map[uint]Docente{
+func getDocentes() (Docentes map[uint]Docente) {
 
-	var Docentes = map[uint]Docente{
+	Docentes = map[uint]Docente{
 		1:Docente{
 			"Pedro",
 			"Ingles",
@@ -44,7 +44,7 @@ func getDocentes() map[uint]Docente{
 		},
 	}
 
-	return Docentes
+	return
 	
 	/*
 	Docentes = make(map[uint]Docente)
